@@ -13,3 +13,6 @@ Route::resource('vue', VueController::class);
 
 use App\Http\Controllers\MongoController;
 Route::resource('mongo', MongoController::class);
+
+use App\Http\Controllers\MagicController;
+Route::resource('magic', MagicController::class);

@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 class PageController extends Controller
 {
-    // Show all users
+    // Show all users from db
     public function index()
     {
         $tests = User::all();
