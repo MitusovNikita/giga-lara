@@ -1,0 +1,35 @@
+stages:
+  - build
+  - test
+  - deploy
+
+# Этап сборки
+build:
+  stage: build
+  script:
+    - echo "Building the project..."
+    - # Тут могут быть команды для установки зависимостей, компиляции и т.д.
+  tags:
+    - your-runner-tag
+
+# Этап тестирования
+test:
+  stage: test
+  script:
+    - echo "Running tests..."
+    - # Запустите тесты, например, с использованием PHPUnit
+    - vendor/bin/phpunit --configuration phpunit.xml
+  tags:
+    - your-runner-tag
+
+# Этап деплоя
+deploy:
+  stage: deploy
+  script:
+    - echo "Deploying to production..."
+    - # Команды для деплоя на сервер, например, через SSH
+  environment:
+    name: production
+    url: https://your-production-url.com
+  only:
+    - master
