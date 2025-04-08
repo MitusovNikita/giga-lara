@@ -1,5 +1,5 @@
 # Use an official PHP image as the base image
-FROM php:8.2-fpm
+FROM php:8.3-fpm
 
 # Install dependencies
 RUN apt-get update && apt-get install -y \
@@ -15,6 +15,22 @@ RUN apt-get update && apt-get install -y \
     supervisor \
     && docker-php-ext-configure gd --with-freetype --with-jpeg \
     && docker-php-ext-install pdo mbstring pdo_mysql gd xml
+
+# x-debug install
+RUN pecl install xdebug \
+    && docker-php-ext-enable xdebug
+
+# Устанавливаем зависимость для phpredis
+RUN pecl install redis && docker-php-ext-enable redis
+
+# Расширение для mongodb
+# RUN docker-php-ext-enable mongodb
+
+# Устанавливаем зависимости для Memcached
+RUN apt-get update && apt-get install -y libmemcached-dev && docker-php-ext-install memcached
+# Установим PECL пакет для memcached
+RUN pecl install memcached && docker-php-ext-enable memcached
+
 
 # Install dependencies for MongoDB
 #RUN apt-get update && apt-get install -y libcurl4-openssl-dev pkg-config libssl-dev
