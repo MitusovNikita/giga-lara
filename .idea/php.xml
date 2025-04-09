@@ -71,8 +71,6 @@
       <path value="$PROJECT_DIR$/app/vendor/sebastian/environment" />
       <path value="$PROJECT_DIR$/app/vendor/sebastian/exporter" />
       <path value="$PROJECT_DIR$/app/vendor/sebastian/cli-parser" />
-      <path value="$PROJECT_DIR$/app/vendor/sebastian/code-unit" />
-      <path value="$PROJECT_DIR$/app/vendor/sebastian/code-unit-reverse-lookup" />
       <path value="$PROJECT_DIR$/app/vendor/sebastian/comparator" />
       <path value="$PROJECT_DIR$/app/vendor/psr/simple-cache" />
       <path value="$PROJECT_DIR$/app/vendor/carbonphp/carbon-doctrine-types" />
@@ -109,6 +107,14 @@
       <path value="$PROJECT_DIR$/app/vendor/symfony/polyfill-intl-idn" />
       <path value="$PROJECT_DIR$/app/vendor/symfony/polyfill-intl-normalizer" />
       <path value="$PROJECT_DIR$/app/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/app/vendor/league/uri" />
+      <path value="$PROJECT_DIR$/app/vendor/league/uri-interfaces" />
+      <path value="$PROJECT_DIR$/app/vendor/staabm/side-effects-detector" />
+      <path value="$PROJECT_DIR$/app/vendor/doctrine/annotations" />
+      <path value="$PROJECT_DIR$/app/vendor/psr/cache" />
+      <path value="$PROJECT_DIR$/app/vendor/zircote/swagger-php" />
+      <path value="$PROJECT_DIR$/app/vendor/swagger-api/swagger-ui" />
+      <path value="$PROJECT_DIR$/app/vendor/darkaonline/l5-swagger" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="8.0">

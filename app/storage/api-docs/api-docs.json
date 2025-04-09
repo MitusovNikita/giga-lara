@@ -1,0 +1,81 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Simple API",
+        "description": "Первый API для сваггера",
+        "contact": {
+            "email": "mitusov333@gmail.com"
+        },
+        "license": {
+            "name": "MIT",
+            "url": "https://opensource.org/licenses/MIT"
+        },
+        "version": "1.0"
+    },
+    "paths": {
+        "/swagger/show": {
+            "get": {
+                "summary": "Simple Hello World endpoint",
+                "operationId": "78be6f9b5f21966500766238f8448a5e",
+                "responses": {
+                    "200": {
+                        "description": "A simple hello world message",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "message": {
+                                            "type": "string",
+                                            "example": "Hello, World!"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/swagger/advanced/{num}": {
+            "get": {
+                "summary": "Умножение числа на 2",
+                "description": "Этот метод умножает переданное число на 2 и возвращает результат в формате JSON.",
+                "operationId": "0baf556fee4fe450bd01a2ec6fb96f3d",
+                "parameters": [
+                    {
+                        "name": "num",
+                        "in": "path",
+                        "description": "Целое число, которое будет умножено на 2",
+                        "required": true,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int32"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Успешный ответ с умноженным числом",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "number": {
+                                            "description": "Умноженное число",
+                                            "type": "integer"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Неверный запрос (например, неправильный формат числа)"
+                    }
+                }
+            }
+        }
+    }
+}

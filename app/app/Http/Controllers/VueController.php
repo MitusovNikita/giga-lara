@@ -12,4 +12,14 @@ class VueController extends Controller
         // Fetch users from the database, for example
         return view('vue.index'); // return a view
     }
+
+    public function simple()
+    {
+        return response()->file(resource_path('views/vue/simple.php'));
+    }
+
+    public function simpleVue()
+    {
+        return response()->file(resource_path('views/vue/simple-vue.php'));
+    }
 }

@@ -10,7 +10,7 @@ class ConfigSingletonService
         $this->settings = parse_ini_file(config('singleton.ini'), true);
     }
     private function __clone(){}
-    private function __wakeup(){}
+//    private function __wakeup(){}
 
     public static function getInstance() : ConfigSingletonService
     {

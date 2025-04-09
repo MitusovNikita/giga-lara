@@ -1,6 +1,5 @@
 <?php
-// php artisan --filter FirstTest
-
+// php artisan test --filter FirstTest
 
 namespace Tests\Unit;
 

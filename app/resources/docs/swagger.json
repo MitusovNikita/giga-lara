@@ -1,0 +1,33 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Simple API",
+        "version": "1.0"
+    },
+    "paths": {
+        "/swagger/show": {
+            "get": {
+                "summary": "Simple Hello World endpoint",
+                "operationId": "78be6f9b5f21966500766238f8448a5e",
+                "responses": {
+                    "200": {
+                        "description": "A simple hello world message",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "message": {
+                                            "type": "string",
+                                            "example": "Hello, World!"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
