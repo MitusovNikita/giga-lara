@@ -9,7 +9,7 @@ class GreetingsController extends Controller
 {
     public function hello(GreetingsService $service) : JsonResponse
     {
-        // response
+        // response good
         return response()->json(['message' => $service->sayHello('Bob')]);
     }
 
