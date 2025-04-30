@@ -10,7 +10,7 @@ class DbController
     public function transaction() : bool
     {
         // вывожу всех users
-//        $users = User::all();
+        // $users = User::all();
 
         // пример транзакции силами Laravel
         DB::transaction(
