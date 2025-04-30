@@ -9,7 +9,7 @@ class DbController
 {
     public function transaction() : bool
     {
-        // вывожу всех users
+        // вывожу всех users через Eloquent
         // $users = User::all();
 
         // пример транзакции силами Laravel
