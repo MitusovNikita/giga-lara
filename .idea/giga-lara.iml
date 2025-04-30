@@ -121,6 +121,14 @@
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/zircote/swagger-php" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/swagger-api/swagger-ui" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/darkaonline/l5-swagger" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/backpack/crud" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/backpack/basset" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/creativeorange/gravatar" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/prologue/alerts" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/doctrine/dbal" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/doctrine/deprecations" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/backpack/generators" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/backpack/theme-tabler" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

@@ -115,6 +115,16 @@
       <path value="$PROJECT_DIR$/app/vendor/zircote/swagger-php" />
       <path value="$PROJECT_DIR$/app/vendor/swagger-api/swagger-ui" />
       <path value="$PROJECT_DIR$/app/vendor/darkaonline/l5-swagger" />
+      <path value="$PROJECT_DIR$/app/vendor/sebastian/code-unit" />
+      <path value="$PROJECT_DIR$/app/vendor/sebastian/code-unit-reverse-lookup" />
+      <path value="$PROJECT_DIR$/app/vendor/backpack/crud" />
+      <path value="$PROJECT_DIR$/app/vendor/backpack/basset" />
+      <path value="$PROJECT_DIR$/app/vendor/creativeorange/gravatar" />
+      <path value="$PROJECT_DIR$/app/vendor/prologue/alerts" />
+      <path value="$PROJECT_DIR$/app/vendor/doctrine/dbal" />
+      <path value="$PROJECT_DIR$/app/vendor/doctrine/deprecations" />
+      <path value="$PROJECT_DIR$/app/vendor/backpack/generators" />
+      <path value="$PROJECT_DIR$/app/vendor/backpack/theme-tabler" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="8.0">

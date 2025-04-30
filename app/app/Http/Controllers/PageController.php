@@ -9,6 +9,9 @@ class PageController extends Controller
     // Show all users from db
     public function index()
     {
+        phpinfo();
+        die;
+
         $tests = User::all();
 
 //        echo "<pre>";

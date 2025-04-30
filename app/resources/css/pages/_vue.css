@@ -1,0 +1,16 @@
+body {
+    font-family: sans-serif;
+}
+.menu {
+    display: flex;
+    gap: 1rem;
+}
+.menu-item {
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+.active {
+    background-color: #42b983;
+    color: white;
+}
