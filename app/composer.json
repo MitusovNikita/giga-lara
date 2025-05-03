@@ -9,14 +9,15 @@
         "backpack/crud": "6.*",
         "backpack/theme-tabler": "^1.2",
         "darkaonline/l5-swagger": "^8.0",
+        "illuminate/queue": "^12.0",
         "laravel/framework": "^12.0",
-        "laravel/tinker": "^2.9"
+        "laravel/tinker": "^2.9",
+        "php-amqplib/php-amqplib": "^2.0"
     },
     "require-dev": {
         "backpack/generators": "^4.0",
         "fakerphp/faker": "^1.23",
         "laravel/pint": "^1.13",
-        "laravel/sail": "^1.26",
         "mockery/mockery": "^1.6",
         "nunomaduro/collision": "^8.0",
         "phpunit/phpunit": "^12.0.0"
