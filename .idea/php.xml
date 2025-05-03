@@ -26,7 +26,6 @@
       <path value="$PROJECT_DIR$/app/vendor/myclabs/deep-copy" />
       <path value="$PROJECT_DIR$/app/vendor/phar-io/manifest" />
       <path value="$PROJECT_DIR$/app/vendor/phar-io/version" />
-      <path value="$PROJECT_DIR$/app/vendor/laravel/sail" />
       <path value="$PROJECT_DIR$/app/vendor/laravel/serializable-closure" />
       <path value="$PROJECT_DIR$/app/vendor/laravel/tinker" />
       <path value="$PROJECT_DIR$/app/vendor/mockery/mockery" />
@@ -125,6 +124,7 @@
       <path value="$PROJECT_DIR$/app/vendor/doctrine/deprecations" />
       <path value="$PROJECT_DIR$/app/vendor/backpack/generators" />
       <path value="$PROJECT_DIR$/app/vendor/backpack/theme-tabler" />
+      <path value="$PROJECT_DIR$/app/vendor/php-amqplib/php-amqplib" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="8.0">
