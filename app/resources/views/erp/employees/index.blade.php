@@ -3,5 +3,10 @@
 @section('title', 'Сотрудники')
 
 @section('content')
-    <p>Пользователи</p>
+    <h3>Пользователи</h3>
+
+    @foreach($allEmployees as $employee)
+        <p>{{ $employee->id }} - {{ $employee->name }}</p>
+    @endforeach
+
 @endsection

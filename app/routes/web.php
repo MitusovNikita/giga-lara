@@ -40,6 +40,7 @@ Route::get('greet', [GreetingsController::class, 'hello']);
 
 use App\Http\Controllers\DbController;
 Route::get('db/transaction', [DbController::class, 'transaction']);
+Route::get('db/base-commands', [DbController::class, 'baseCommands']);
 
 // erp
 use App\Http\Controllers\Erp\HomeController;

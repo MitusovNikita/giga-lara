@@ -32,4 +32,45 @@ class DbController
 
         return true;
     }
+
+    public function baseCommands()
+    {
+        // получить все записи
+        $var = User::all();
+
+        // найти запись по id (вызовет 404 ошибку)
+        $var = User::findOrFail(1);
+
+        // найти запись по условию
+        $var = User::where('id', '<', 2)->first();
+
+        // создать новую запись
+//        User::create(
+//            array(
+//                'name' => 'Billy',
+//                'email' => 'mit@mail.com',
+//                'password' => '123'
+//            )
+//        );
+
+        // обновить запись
+        $user = User::find(16);
+
+//        $user->update(
+//            array(
+//                'name' => 'Max',
+//                'password' => '233424'
+//            )
+//        );
+
+        // удалить запись
+//        $user = User::find(16);
+//        $user->delete();
+
+        // сортировка
+        $var = User::orderBy('name')->get();
+
+        // агрегирующие функции
+        $var = User::all()->count();
+    }
 }
