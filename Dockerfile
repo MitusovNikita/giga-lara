@@ -1,4 +1,4 @@
-# Use an official PHP image as the base image
+# Use an official PHP image as the base image1
 FROM php:8.3-fpm
 
 # Install dependencies
