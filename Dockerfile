@@ -53,6 +53,9 @@ RUN curl -sL https://deb.nodesource.com/setup_current.x | bash - \
 #RUN pecl install mongodb \
 #    && docker-php-ext-enable mongodb
 
+#extension fot rabbitmq
+RUN docker-php-ext-install bcmath
+
 # Install Composer
 COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 

@@ -5,6 +5,7 @@ use App\Models\Employee;
 
 class EmployeesController
 {
+    // get all employees
     public function index()
     {
         $allEmployees = Employee::all();
@@ -15,4 +16,16 @@ class EmployeesController
             ]
         );
     }
+
+    public function testGetter()
+    {
+        $employee = Employee::find(1);
+
+//        $employee->name = 'Nikolas';
+//        $employee->save();
+
+        echo $employee->name;
+    }
+
+
 }

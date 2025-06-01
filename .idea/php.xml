@@ -124,6 +124,7 @@
       <path value="$PROJECT_DIR$/app/vendor/doctrine/deprecations" />
       <path value="$PROJECT_DIR$/app/vendor/backpack/generators" />
       <path value="$PROJECT_DIR$/app/vendor/backpack/theme-tabler" />
+      <path value="$PROJECT_DIR$/app/vendor/laravel/sail" />
       <path value="$PROJECT_DIR$/app/vendor/php-amqplib/php-amqplib" />
     </include_path>
   </component>

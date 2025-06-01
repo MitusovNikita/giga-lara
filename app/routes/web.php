@@ -47,4 +47,16 @@ use App\Http\Controllers\Erp\HomeController;
 Route::get('erp', [HomeController::class, 'index']);
 
 use App\Http\Controllers\Erp\EmployeesController;
-Route::get('erp/employees', [EmployeesController::class, 'index']);
+//Route::get('erp/employees', [EmployeesController::class, 'index']);
+//Route::get('erp/employees/test', [EmployeesController::class, 'testGetter']);
+
+Route::controller(EmployeesController::class)->group(
+    function() {
+        Route::get('erp/employees', 'index');
+        Route::get('erp/employees/test', 'testGetter');
+    }
+);
+
+
+use App\Http\Controllers\RabbitController;
+Route::get('rabbit', [RabbitController::class, 'index']);
