@@ -7,15 +7,27 @@ use App\Services\Magic;
 
 class MagicController extends Controller
 {
-    // Show all users
-    public function index()
+    private $magicService;
+
+    public function __construct(Magic $magic)
     {
-        // constructor
-        $magic = new Magic();
-        $string = $magic->myFunction();
+        $this->magicService = $magic;
+    }
+
+    // Show all users
+    public function index(Magic $magic)
+    {
+        // service 1
+// $magic = new Magic();
+// $string = $magic->myFunction();
+
+        // service 2
+//        echo $magic->myFunction();
+
+        // service 3
+        echo $this->magicService->myFunction();
 
         // get
-
 
         //set
 
